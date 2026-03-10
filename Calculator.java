@@ -2,17 +2,17 @@ import java.util.Scanner;
 class Calculator{
     public static void main(String[] args)
     {
-        Scanner in = new Scanner(System.in);
+        Scanner n = new Scanner(System.in);
         int ans = 0;
         while(true)
         {
             System.out.println("Enter the Operator:");
-            char op = in.next().trim().charAt(0);
+            char op = n.next().trim().charAt(0);
             if(op == '+' || op == '-' || op == '*' || op == '/' || op == '%')
             {
                 System.out.print("Enter the number:");
-                int num1 = in.nextInt();
-                int num2 = in.nextInt();
+                int num1 = n.nextInt();
+                int num2 = n.nextInt();
             
                 if (op == '+')
                 {
